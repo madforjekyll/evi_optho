@@ -1436,41 +1436,43 @@ a.back-to-top {
 }
 .share-button {
   position: relative;
-  width: 50px;
-  margin: 0 auto;
+  width: 200px;
+  margin: 10px auto 0 auto;
 }
 
 .toggle {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  z-index: 10;
-  display: block;
-  cursor: pointer;
-  color: #23779e;
-  font-size: 30px;
-  font-weight: normal;
+  display: inline-block;
+    padding: 6px 20px;
+    margin-bottom: 20px;
+    background: #23779e;
+    box-shadow: 2px 2px 4px #fbfbfb;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    text-shadow: 0 1px 2px #222;
+    color: #FFF;
+    font-weight: bold;
+    line-height: 24px;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 900;
 }
 .toggle:hover {
   font-weight: 900;
-  color: #00b5f3;
+  color: #e37682;
 }
 .toggle:after {
   font-family: 'FontAwesome';
   content: "\f1e0";
-  
 }
+ 
 .toggle-input {
   display: none;
 }
-.toggle-input:checked + .toggle:after, .toggle-input:checked + .toggle:before {
-  background-color: #d57476;
-  content: "";
-  height: 3px;
-  width: 30px;
-  position: absolute;
-  left: 10px;
-  top: 23px;
+.toggle-input:checked + .toggle:after {
+  font-family: 'FontAwesome';
+  content: "\f00d";
 }
 .toggle-input:checked + .toggle:after {
   transform: rotate(45deg);
@@ -1549,15 +1551,15 @@ input:checked ~ .network-list li {
   opacity: 1;
 }
 input:checked ~ .network-list li:nth-child(1) {
-  left: -60px;
-  top: -60px;
-}
-input:checked ~ .network-list li:nth-child(2) {
   left: 0;
   top: -60px;
 }
+input:checked ~ .network-list li:nth-child(2) {
+  left: 75px;
+  top: -60px;
+}
 input:checked ~ .network-list li:nth-child(3) {
-  left: 60px;
+  left: 150px;
   top: -60px;
 }
 
@@ -1616,27 +1618,6 @@ input:checked ~ .network-list li:nth-child(3) {
   100% {
     transform: rotate(-45deg) scale(1);
   }
-}
-h1 {
-  position: absolute;
-  top: 5vh;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  font-size: 22px;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #C4C2BB;
-  text-shadow: 1px 1px 0px #FFFFFF;
-  letter-spacing: 0.5px;
-}
-
-.sharer {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
 }
 
 
