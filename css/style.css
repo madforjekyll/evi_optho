@@ -237,7 +237,7 @@ p {
   font-family: "GFS Goschen-Italic", serif;
   font-size: 3em;
   font-weight: 700;
-  margin-top: 10.95em;
+  margin-top: 11.75em;
   color: #fb7674;
   text-shadow: 2px 2px 4px #fbfbfb;
   -webkit-transition: 0.3s;
@@ -247,11 +247,11 @@ p {
 @media screen and (max-width: 768px) {
   #fh5co-home .flexslider .fh5co-text h1 {
     font-size: 1em;
-    margin-top: 25em;
+    margin-top: 27.5em;
   }
 }
 #fh5co-home .flexslider .fh5co-text h2 {
-  margin-top: 15.25em;
+  margin-top: -.45em;
   padding: 0;
   font-family: 'GFS Goschen-Italic';
   font-weight: 300;
@@ -266,7 +266,7 @@ p {
 @media screen and (max-width: 768px) {
   #fh5co-home .flexslider .fh5co-text h2 {
     font-size: .75em;
-    margin-top: 28.5em;
+    margin-top: -.75em;
   }
 }
 #fh5co-home .flexslider .fh5co-text h2 span {
